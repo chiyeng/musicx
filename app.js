@@ -13,7 +13,7 @@ const musicDir = path.join(__dirname, process.env.MUSIC_DIR || 'music');
 require('dotenv').config();
 
 // 管理密码
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'ps999';
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'Ps999';
 
 function getContentType(ext) {
   const contentTypes = {
@@ -372,4 +372,5 @@ app.post('/api/delete/music', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`music service is running on port ${PORT}`);
 });
+
 
